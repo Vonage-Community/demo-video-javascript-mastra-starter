@@ -1,0 +1,44 @@
+{
+  "name": "vonage-mastra-app",
+  "version": "1.0.0",
+  "description": "A starter project showing how to integrate the Vonage Video API Audio Connector with Mastra AI.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch --env-file=.env src/index.ts",
+    "build": "mastra build",
+    "start": "tsx watch --env-file=.env src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "dependencies": {
+    "@mastra/core": "1.64.0",
+    "@mastra/duckdb": "1.6.4",
+    "@mastra/express": "^1.5.8",
+    "@mastra/libsql": "1.22.3",
+    "@mastra/memory": "1.28.2",
+    "@mastra/observability": "1.17.5",
+    "@mastra/voice-google-gemini-live": "^0.14.9",
+    "@vonage/server-sdk": "^3.30.0",
+    "@vonage/video": "^1.31.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "ws": "^8.21.3",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "latest",
+    "@types/ws": "^8.18.1",
+    "mastra": "1.27.3",
+    "tsx": "^4.23.13",
+    "typescript": "^6.0.3"
+  }
+}
